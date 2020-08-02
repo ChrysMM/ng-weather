@@ -3,14 +3,20 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
-@NgModule({
+import { HttpClientModule } from '@angular/common/http';
+import { WeatherComponent } from './weather/weather.component';
+import { FormsModule} from '@angular/forms';
+@NgModule({ 
   declarations: [
-    AppComponent
+    AppComponent,
+    WeatherComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,// pour ajouter notre un module pour effectuer des requetes on 
+    //va faire un service et récuperer les requetes
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

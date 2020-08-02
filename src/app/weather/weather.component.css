@@ -1,0 +1,59 @@
+.icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+     
+}
+.name {  
+    background: rgb(236,242,171);
+    background: linear-gradient(90deg, rgba(236,242,171,1) 0%, rgba(179,31,108,1) 100%); 
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    color: rgb(34, 29, 32);
+     
+
+}
+.weather {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 60px;
+    background: radial-gradient(circle, rgba(236,242,171,1) 0%, rgba(180,33,109,1) 100%);  
+}
+.container {
+    
+    margin: 100px;
+}
+.ville {
+    display: flex;
+    justify-content: space-around;
+    font-size: 50px;
+    color: rgb(119, 35, 91);
+    align-items: center;
+}
+.temp {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;
+    color: rgb(34, 29, 32);
+}
+.tempRess {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;
+    color: rgb(34, 29, 32);
+}
+.humidity {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;
+    color: rgb(34, 29, 32);
+
+}

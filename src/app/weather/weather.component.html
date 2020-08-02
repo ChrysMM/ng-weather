@@ -1,0 +1,35 @@
+<div class="container">
+
+<span class="name">
+    <label>
+        Choisir une Ville:
+        <input [(ngModel)]="name" />
+        <button (click)="getCurrentWeather()">Chercher</button>
+    </label>
+</span>
+
+<div class = "weather" *ngIf="weather">
+    <span class="ville">
+        {{weather.name}}
+     
+    </span>
+    <span class="icon">
+    
+        <img src = "http://openweathermap.org/img/wn/{{weather.weather[0].icon}}@2x.png">     
+    </span>
+    <span class="temp">
+    Température: {{weather.main.temp}}°C
+
+</span>
+
+<span class="tempRess">
+     Température Ressentie: {{weather.main.feels_like}}°C
+</span>
+
+<span class="humidity">
+    Humidité: {{weather.main.humidity}}%
+</span>
+
+
+</div>
+</div>
